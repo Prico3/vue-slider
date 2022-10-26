@@ -55,12 +55,14 @@ createApp({
 
         showPrev() {
 
-            if(this.currentSlide < this.slides.length - 1){
+            if(this.currentSlide > 0){
                 this.currentSlide --;
             }else {
-                this.currentSlide = 0;
+                this.currentSlide = this.slides.length - 1;
             }
-        }
+        },
+
+       
     }
     
 
