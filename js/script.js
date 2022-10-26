@@ -45,8 +45,18 @@ createApp({
     
     methods: {
         showNext() {
-            if(this.currentSlide < this.slides.lenght - 1){
+
+            if(this.currentSlide < this.slides.length - 1){
                 this.currentSlide ++;
+            }else {
+                this.currentSlide = 0;
+            }
+        },
+
+        showPrev() {
+
+            if(this.currentSlide < this.slides.length - 1){
+                this.currentSlide --;
             }else {
                 this.currentSlide = 0;
             }
