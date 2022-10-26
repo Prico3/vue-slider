@@ -18,7 +18,7 @@
 
                 <div class="item">
 
-                    <img :src="slides[currentSlide].image" alt="" />
+                    <img :src="slides[currentSlide].image" alt="" >
 
                     <div class="text">
                         <h3>{{ slides[currentSlide].title }}</h3>
@@ -28,23 +28,32 @@
                 </div>
 
                 <div class="thumbs">
-                    <div class="prev"></div>
-                    <div class="next"></div>
+
+                    <div class="prev" ></div>
+
+
+                    <div class="next" @click.prevent="showNext"></div>
+
                     <div class="thumb active">
                         <img src="img/01.jpg" alt="Svezia"/>
                     </div>
+
                     <div class="thumb">
                         <img src="img/02.jpg" alt="Svizzera" />
                     </div>
+
                     <div class="thumb">
                         <img src="img/03.jpg" alt="Gran Bretagna" />
                     </div>
+
                     <div class="thumb">
                         <img src="img/04.jpg" alt="Germania" />
                     </div>
+
                     <div class="thumb">
                         <img src="img/05.jpg" alt="Paradise" />
                     </div>
+
                 </div>
 
             </div>

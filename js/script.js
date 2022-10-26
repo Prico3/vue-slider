@@ -39,10 +39,20 @@ createApp({
 
             ],
             currentSlide: 0           
+        };
+
+    },
+    
+    methods: {
+        showNext() {
+            if(this.currentSlide < this.slides.lenght - 1){
+                this.currentSlide ++;
+            }else {
+                this.currentSlide = 0;
+            }
         }
     }
-
-
+    
 
 }).mount("#app")
 
